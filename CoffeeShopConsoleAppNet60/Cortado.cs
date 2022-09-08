@@ -1,17 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeShopConsoleAppNet60
 {
-    public class Latte : Coffee, IMilk
+    public class Cortado : Coffee, IMilk
     {
-        public Latte(int price) : base(price)
+        public Cortado(int price) : base(price)
         {
-            this.price = 40;
+            price = 25;
         }
 
         public override int Price()
@@ -21,12 +20,12 @@ namespace CoffeeShopConsoleAppNet60
 
         public override string Strenght()
         {
-            return "Weak";
+            return "Medium";
         }
 
         public int MlMilk()
         {
-            return 200;
+            return 40;
         }
     }
 }

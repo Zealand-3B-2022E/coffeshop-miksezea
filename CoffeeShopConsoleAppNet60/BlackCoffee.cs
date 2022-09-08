@@ -8,6 +8,13 @@ namespace CoffeeShopConsoleAppNet60
 {
     public class BlackCoffee : Coffee
     {
+        public BlackCoffee(int price) : base(price)
+        {
+        }
 
+        public override string Strenght()
+        {
+            return "Strong";
+        }
     }
 }

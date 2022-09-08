@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeShopConsoleAppNet60
 {
-    public class Coffee
+    public abstract class Coffee
     {
         public Coffee(int price)
         {
@@ -18,5 +18,7 @@ namespace CoffeeShopConsoleAppNet60
         {
             return price;
         }
+
+        public abstract string Strenght();
     }
 }
