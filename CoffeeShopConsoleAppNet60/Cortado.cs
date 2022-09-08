@@ -8,14 +8,13 @@ namespace CoffeeShopConsoleAppNet60
 {
     public class Cortado : Coffee, IMilk
     {
-        public Cortado(int price) : base(price)
+        public Cortado()
         {
-            price = 25;
         }
 
         public override int Price()
         {
-            return price;
+            return 25;
         }
 
         public override string Strenght()

@@ -9,14 +9,13 @@ namespace CoffeeShopConsoleAppNet60
 {
     public class Latte : Coffee, IMilk
     {
-        public Latte(int price) : base(price)
+        public Latte()
         {
-            this.price = 40;
         }
 
         public override int Price()
         {
-            return price;
+            return 40;
         }
 
         public override string Strenght()

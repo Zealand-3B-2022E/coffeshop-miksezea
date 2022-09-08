@@ -8,17 +8,13 @@ namespace CoffeeShopConsoleAppNet60
 {
     public abstract class Coffee
     {
-        public Coffee(int price)
+        public Coffee()
         {
-            this.price = 20;
         }
-
-        public int price { get; set; }
         public virtual int Price()
         {
-            return price;
+            return 20;
         }
-
         public abstract string Strenght();
     }
 }
